@@ -62,7 +62,7 @@ def get_desired_data(client):
 async def main():
     try:
         #Init code here
-        ser = serial.Serial('<Tên cổng kết nối với Arduino>', 9600, timeout=1)
+        ser = serial.Serial("<Tên cổng kết nối với Arduino>", 9600, timeout=1)
         print("Starting the py Iot Hub Device Twin device sample...")
         client = create_client("<Device Primary Connection String>")
         print("Connecting to client")
